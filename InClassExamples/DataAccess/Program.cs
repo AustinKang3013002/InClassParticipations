@@ -11,6 +11,7 @@ namespace DataAccess
     {
         static void Main(string[] args)
         {
+            
             double num1 = 28;
             double num2 = 482.2;
             double num3 = 382.222;
@@ -19,8 +20,13 @@ namespace DataAccess
             result = Add(num1, num2);
             Console.WriteLine($"{num1} + {num2} = {result.ToString("N2")}");
 
-            double[] nums = { num1, num2, num3 };
-            nums = new double
+            //double[] nums = { num1, num2, num3 };
+            //nums = new double
+            // nums[0] = num1;
+            //  nums[1] = num2;
+            // nums[2] = num3;
+            //nums[3] = Error Out of Index;
+            result = Add(nums);
 
 
 
