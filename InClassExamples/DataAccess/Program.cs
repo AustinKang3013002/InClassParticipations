@@ -11,12 +11,51 @@ namespace DataAccess
     {
         static void Main(string[] args)
         {
-            double result= Add(5, 17.5);
+            double num1 = 28;
+            double num2 = 482.2;
+            double num3 = 382.222;
+            double result = Add(5, 17.5);
             Console.WriteLine($"5+17.5 = { result.ToString("N2")}");
+            result = Add(num1, num2);
+            Console.WriteLine($"{num1} + {num2} = {result.ToString("N2")}");
+
+            double[] nums = { num1, num2, num3 };
+            nums = new double
+
+
+
             Console.ReadKey();
-            
-            
+
+
+
         }
+        static double Add(double[] NumbersToAddUp)
+        {
+            double r = 0;
+            int counter = 0;
+            while (counter<NumbersToAddUp.Length)
+            {
+                var number = NumbersToAddUp[counter];
+            }
+
+            foreach (var number in NumbersToAddUp)
+            {
+                r += number;
+            }
+            for (counter = 0; counter < NumbersToAddUp.Length; counter++)
+            {
+                var number = NumbersToAddUp[counter];
+                r += number;
+            }
+            return r;
+
+        }
+        
+
+
+
+
+        
         /// <summary>
         /// sums up two numbers and provides the results 
         /// </summary>
